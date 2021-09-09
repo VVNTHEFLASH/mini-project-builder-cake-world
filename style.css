@@ -1,11 +1,162 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 *{
     margin:0;
     padding:0;
 }
-
 /* Fill your code*/
 
+body{
+    background: #7d42a7;
+    font-family: 'Ubuntu', sans-serif;
+}
+.head-bar {
+    background: rgb(90, 18, 18);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+}
+ .line {
+    width: 2px;
+    background: #aa42f5;
+    height: 150px;
+    transform:rotate(45deg) translateX(-30px);
+}
+.center-head {
+    background: black;
+    color: white;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 550px;
+    border: solid rgb(90, 18, 18) 10px;
+    border-top: 0; 
+}
+.price {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 200px;
+    margin: 80px 120px;
+    color: white;
+    font-weight: bold;
+}
+.price-board h3 {
+    position: relative;
+    bottom: 220px;
+    left: 105px;
+    font-size: x-large;
+}
+.price-board span {
+    position: relative;
+    bottom: 190px;
+    left: 55px;
+    font-size: larger;
+}
+.bill-board h3{
+    position: relative;
+    bottom: 220px;
+    left: 120px;
+    font-size: x-large;
+}
+.bill-board div {
+    position: relative;
+    bottom: 200px;
+    left: 55px;
+    font-size: larger;
+    visibility: hidden;
+}
+.foot-bar {
+    background: rgb(90, 18, 18);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+}
+button {
+    font-size: 18pt;
+    background: #aa42f5;
+    border-radius: 10%;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#buy-button {
+    background: chartreuse;
+    color: black;
+}
+.cake {
+    position: relative;
+    bottom: 150px;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.cake-layer {
+    height: 40px;
+    border-radius: 10%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#candle {  
+    height: 50px;
+    width: 60px;
+    top: 15px;
+    position: relative;
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+#totalBill {
+    background: black;
+    width: 65%;
+    padding: 2.5px;
+}
+#layer1{
+    width: 245px;
+    display: none;
+}
+
+#layer2{
+    width: 200px;
+    left: 40px;
+    display: none;
+}
+
+#layer3{
+    width: 160px;
+    left: 60px;
+    display: none;
+}
+
+#layer4{
+    width: 120px;
+    left: 80px;
+    display: none;
+}
+
+#layer5{
+    width: 80px;
+    left: 100px;
+    display: none;
+}
